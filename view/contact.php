@@ -1,5 +1,5 @@
 <?php
-include '../../controller/conexion.php';
+include '../controller/conexion.php';
 $omitStylesheet = true;
 include "templates/header.php";
 ?>
