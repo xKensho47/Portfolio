@@ -1,5 +1,5 @@
 <?php
-include '../controller/conexion.php';
+include '../../controller/conexion.php';
 $omitStylesheet = true;
 include "templates/header.php";
 ?>
@@ -17,7 +17,7 @@ include "templates/header.php";
                 unset($_SESSION['mensaje_error']); // Limpiar la variable de sesión
             }
             ?>
-            <form class="contact-form" action="../controller/procesar_formulario.php" method="post">
+            <form class="contact-form" action="../../controller/procesar_formulario.php" method="post">
                 <div class="form-group">
                     <label for="nombre">Nombre completo</label>
                     <div class="name-fields">

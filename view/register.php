@@ -30,7 +30,7 @@ include "templates/header.php";
 
                 <div class="form-group">
                     <label for="password">Ingrese su contraseña:</label>
-                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" minlength="13" required>
                 </div>
                 <div class="form-group login-register reg">
                     <button class="login-button button__login-form" type="submit">Iniciar Sesión</button>

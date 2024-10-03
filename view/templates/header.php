@@ -9,7 +9,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
   <title>Mi Portfolio</title>
   <link rel="stylesheet" href="../css/normalize.css">
   <?php if (!isset($omitStylesheet) || !$omitStylesheet): ?>
@@ -22,7 +22,7 @@ if (session_status() === PHP_SESSION_NONE) {
 <body>
   <div class="container">
     <header class="header">
-      <a href="index.php" class="link-logo">
+      <a href="../../index.php" class="link-logo">
         <img src="../../images/logo.png" alt="Portfolio Logo" class="logo">Damián Tripodi
       </a>
       <nav class="menu">

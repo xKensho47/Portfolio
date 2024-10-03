@@ -1,12 +1,12 @@
 <?php
 $omitStylesheet = true;
-include "templates/header.php";
+include "view/templates/header.php";
 ?>
 <main class="main-principal">
     <section class="pres-container">
         <aside class="image-space">
             <div class="image-space__profile">
-                <img src="../../images/profile.png" alt="Profile photo" class="presentation__background">
+                <img src="images/profile.png" alt="Profile photo" class="presentation__background">
             </div>
         </aside>
         <aside class="presentation">
@@ -26,10 +26,10 @@ include "templates/header.php";
             </article>
             <?php if (!isset($_SESSION['id_usuario'])): ?>
             <div class="presentation__button index-button">
-                <a href="login.php" class="login"><button class="login-button">LogIn/Sign Up</button></a>
+                <a href="view/login.php" class="login"><button class="login-button">LogIn/Sign Up</button></a>
             </div>
             <?php endif; ?>
         </aside>
     </section>
 </main>
-<?php include "templates/footer.php"; ?>
+<?php include "view/templates/footer.php"; ?>

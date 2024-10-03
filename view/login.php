@@ -12,7 +12,7 @@ if (isset($_SESSION['mensaje_error'])) {
     unset($_SESSION['mensaje_error']);
 }
 
-include '../controller/conexion.php';
+include '../../controller/conexion.php';
 $omitStylesheet = true;
 include "templates/header.php";
 ?>

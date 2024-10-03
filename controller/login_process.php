@@ -34,16 +34,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION["email"] = $email;
 
             // Redirigir a la página de Proyectos
-            header('Location: ../view/index.php');
+            header('Location: ../../index.php');
             exit();
         } else {
             // Contraseña incorrecta
-            header('Location: ../view/login.php?status=usuario_contra');
+            header('Location: ../../view/login.php?status=usuario_contra');
             exit();
         }
     } else {
         // El usuario no existe
-        header('Location: ../view/login.php?status=no_existe');
+        header('Location: ../../view/login.php?status=no_existe');
         exit();
     }
 } else {
