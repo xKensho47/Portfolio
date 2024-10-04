@@ -113,14 +113,14 @@ body {
     justify-content: center;
     
     height: inherit;
-    width: 100%;
+    width: 50%;
 }
 .menu__lista{
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: end;
 
     padding: 5%;
 

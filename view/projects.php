@@ -1,6 +1,6 @@
 <?php
 session_start(); // Asegúrate de iniciar la sesión al principio
-
+/*
 // Verificar si el usuario ha iniciado sesión
 if (!isset($_SESSION['id_usuario'])) {
     // Si no ha iniciado sesión, establece un mensaje de error en la sesión
@@ -9,7 +9,7 @@ if (!isset($_SESSION['id_usuario'])) {
     header('Location: ../view/login.php');
     exit();
 }
-
+*/
 // Incluir el archivo de encabezado después de verificar la sesión
 $omitStylesheet = true;
 include (__DIR__ . '/../view/templates/header.php');

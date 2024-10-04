@@ -30,11 +30,13 @@ if (session_status() === PHP_SESSION_NONE) {
           <li class="menu__item"><a href="../view/projects.php" class="projects">PROYECTOS</a></li>
           <li class="menu__item"><a href="../view/about.php" class="about">SOBRE MI</a></li>
           <li class="menu__item"><a href="../view/contact.php" class="contact">CONTACTO</a></li>
-          <?php if (!isset($_SESSION['id_usuario'])): ?>
+          <!--
+          <?php //if (!isset($_SESSION['id_usuario'])): ?>
             <li class="menu__item"><a href="../view/login.php" class="login"><button class="login-button">Login/SignUp</button></a></li>
-          <?php else: ?>
+          <?php //else: ?>
             <li class="menu__item"><a href="../controller/logout_process.php" class="login"><button class="login-button">LogOut</button></a></li>
-          <?php endif; ?>
+          <?php //endif; ?>
+          -->
         </ul>
       </nav>
     </header>

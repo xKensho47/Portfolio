@@ -24,11 +24,13 @@ include "view/templates/header.php";
                     </p>
                 </div>
             </article>
-            <?php if (!isset($_SESSION['id_usuario'])): ?>
+            <!--
+            <?php //if (!isset($_SESSION['id_usuario'])): ?>
             <div class="presentation__button index-button">
                 <a href="view/login.php" class="login"><button class="login-button">LogIn/Sign Up</button></a>
             </div>
-            <?php endif; ?>
+            <?php //endif; ?>
+            -->
         </aside>
     </section>
 </main>
