@@ -17,7 +17,8 @@ include "templates/header.php";
                 unset($_SESSION['mensaje_error']); // Limpiar la variable de sesión
             }
             ?>
-            <form class="contact-form" action="../../controller/procesar_formulario.php" method="post">
+            <!-- action="../../controller/procesar_formulario.php" -->
+            <form class="contact-form" action="https://formspree.io/f/xqakzavd" method="post">
                 <div class="form-group">
                     <label for="nombre">Nombre completo</label>
                     <div class="name-fields">

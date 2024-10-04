@@ -886,3 +886,20 @@ i:hover{
     height: max-content;
     
 }
+
+/* RESPONSIVE */
+@media screen and (max-width: 1920px) {
+    
+}
+@media screen and (max-width: 1800px){
+    
+}
+@media screen and (max-width: 1024px){
+    
+}
+@media screen and (max-width: 768px){
+    
+}
+@media screen and (max-width: 320px){
+    
+}
