@@ -18,7 +18,7 @@ include "view/templates/header.php";
                     </p>
                 </div>
                 <div class="presentation__description">
-                    <p class="description-thaskify">
+                    <p class="description-portfolio">
                         Te doy la bienvenida a mi portfolio personal, en donde podrás ver y conocer un poco más acerca
                         de mí.
                     </p>

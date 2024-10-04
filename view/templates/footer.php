@@ -20,7 +20,7 @@
                 </a>
             </div>
         </section>
-        <div class="thaskify-copyright">
+        <div class="portfolio-copyright">
             &copy; 2024 Damián~ | All Rights Reserved
         </div>
     </nav>
