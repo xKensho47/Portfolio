@@ -19,7 +19,7 @@ include (__DIR__ . '/../view/templates/header.php');
 <main class="main-principal">
     <section class="section-container">
         <h1 class="title">Mis Proyectos</h1>
-        <h2>Los siguientes proyectos personales, han sido realizados durante la <abbr title="Tecnicatura Universitaria en Programación">TUP</abbr>, en la <abbr title="Universidad Tecnológica Nacional">UTN.</abbr></h2>
+        <p class="p-projects">Los siguientes proyectos, han sido realizados durante la <abbr title="Tecnicatura Universitaria en Programación">TUP</abbr>, en la <abbr title="Universidad Tecnológica Nacional">UTN.</abbr></p>
         <article class="article-container">
             <?php
             generateCarousel($conexion);
