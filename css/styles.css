@@ -972,7 +972,7 @@ i:hover {
 
 /* RESPONSIVE */
 @media (min-width: 1601px) and (max-width: 1920px) {}
-@media screen and (max-width: 1600px) {
+@media (min-width: 1025px) and (max-width: 1600px) {
 
     /* HEADER */
     .menu__lista {
@@ -1209,7 +1209,7 @@ i:hover {
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
 
     /* HEADER */
     .abrir-menu,
@@ -1529,7 +1529,7 @@ i:hover {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 551px) and (max-width: 768px) {
 
     /* HEADER */
     .abrir-menu,
