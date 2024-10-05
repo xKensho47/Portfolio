@@ -414,6 +414,8 @@ body {
     gap: 7%;
 
     height: 50%;
+
+    overflow: hidden;
 }
 
 .info-data .info-list {
@@ -470,6 +472,8 @@ body {
     background-position: 0% 100%;
     transition: background-position 0.5s;
     border-color: var(--color-transparent);
+    position: relative;
+    left: 5rem;
 
     border-radius: 50px;
     padding: 2%;
@@ -481,6 +485,120 @@ body {
 .download-button:hover {
     background-position: 0% 0%;
     cursor: pointer;
+}
+.data-personal{
+    background-color: var(--color-background);
+    position: absolute;
+    top: 25vh;
+    
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+
+    gap: 3rem;
+
+    width: 50vw;
+    height: 65%;
+}
+
+/* Tecnologías */
+.techs {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.techs{
+    background-color: var(--color-background);
+    position: absolute;
+    top: 25vh;
+    right: 5vw;
+    left: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+    gap: 3rem;
+
+    width: 50vw;
+    height: 65%;
+
+}
+.techs.move {
+    opacity: 1;
+    visibility: visible;
+    left: 2vw;
+}
+
+.techs-title{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.8rem;
+    color: var(--color-secundario);
+
+    width: 100%;
+}
+.techs-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+
+    height: 25vh;
+    width: 52.5vw;
+}
+
+.techs-container > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.techs-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.right, .left{
+    font-size: 6rem;
+    background-color: var(--color-transparent);
+    color: var(--color-secundario);
+    border: none;
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+    
+
+    width: 7vw;
+    height: 7vw;
+
+    cursor: pointer;
+}
+.right{
+    right: -5vw;
+
+    opacity: 1;
+    visibility: visible;
+    
+    transition: opacity 2s ease-in-out;
+}
+.right.move{
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.left{
+    left: -7vw;
+
+    display: block;
+}
+
+.techs{
+    transition: all 1.5s;
 }
 
 /* POYECTOS */
