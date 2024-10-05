@@ -971,23 +971,35 @@ i:hover {
 }
 
 /* RESPONSIVE */
-@media (min-width: 1601px) and (max-width: 1920px) {}
-@media (min-width: 1025px) and (max-width: 1600px) {
-
+@media (min-width: 1601px) and (max-width: 1920px) {
     /* HEADER */
+    .menu{
+        justify-content: space-between;
+    }
     .menu__lista {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        justify-content:space-evenly;
+        padding: 0;
+        gap: 0rem;
 
-        position: relative;
-        left: -23.5vw;
-
+        width: 50vw;
+    }
+    .menu__item{
+        line-height: normal;
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: center;
         
-        gap: 0.1rem;
-
-        min-width: 100vw;
+        width: 100%;
+        min-height: 7.5vh;
+    }
+    .menu__item a{
+        text-align: center;
+        line-height: 7.5vh;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .logo-header {
@@ -996,8 +1008,9 @@ i:hover {
         align-items: center;
         justify-content: start;
 
-
         width: 50%;
+
+        z-index: 50;
     }
 
     .logo-header img {
@@ -1006,11 +1019,10 @@ i:hover {
     }
 
     /* MAIN */
-    /* PRESENTACION */
     .section-container>.title {
         line-height: 0.5rem;
     }
-
+    /* PRESENTACION */
     .pres-container aside {
         position: absolute;
     }
@@ -1022,7 +1034,7 @@ i:hover {
     }
 
     .presentation {
-        top: 2rem;
+        top: 2vh;
         right: 0;
         width: 60%;
     }
@@ -1039,14 +1051,14 @@ i:hover {
     }
 
     .presentation__description .description-portfolio {
-        font-size: 2rem;
-        font-weight: 400;
+        font-size: 1.5rem;
+        font-weight: 500;
         text-align: center;
     }
 
     .presentation__text {
         position: relative;
-        top: -2.5rem;
+        top: -1.5rem;
         text-align: center;
     }
 
@@ -1095,11 +1107,261 @@ i:hover {
 
     .info-presentation .info-title {
         color: var(--color-secundario);
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
 
     .info-presentation .info-description {
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        padding: 0;
+        height: 25vh;
+    }
+
+    .info-data {
+        gap: 2%;
+
+        height: 40%;
+    }
+
+    .info-data .info-list {
+        gap: 7%;
+    }
+
+    .info-item img {
+        margin-left: -2rem;
+
+        transform: scale(0.9);
+    }
+
+    .info-data .info-item {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+
+    .download-button {
+        position: absolute;
+        left: calc(100vw/10 - 10%);
+        bottom: 5%;
+        width: 20vw;
+        height: 4rem;
+    }
+
+    /* POYECTOS */
+    .section-container .p-projects {
+        font-size: 1.5rem;
+        line-height: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .carousel-section>h2 {
+        margin-top: -2rem;
+        font-size: 1.7rem;
+    }
+
+    /* Contenedor del carrusel */
+    .carousel-container {
+        height: 90%;
+        padding: 0;
+    }
+
+    /* Carrusel */
+    .carousel>h3 {
+        font-size: 2.3rem;
+    }
+
+    /* Elementos del carrusel */
+    .carousel-item>a {
+        width: 85%;
+
+    }
+
+    .carousel>p {
+        line-height: 2.5vh;
+        font-size: 1.3rem;
+        font-weight: 400;
+        width: 100%;
+    }
+
+    /* CONTACTO */
+    .contact-form {
+        padding: 4%;
+        padding-top: 2%;
+
+        width: 55%;
+        height: 75vh;
+    }
+
+    .form-group>textarea {
+        height: 150px;
+    }
+
+    /* FOOTER */
+    .footer .logo {
+        margin-right: 1.5rem;
+        transform: scale(1.8);
+    }
+    .footer a{
         font-size: 1.2rem;
+    }
+    .footer-items {
+        font-size: 1.1rem;
+    }
+
+    .social-media {
+        margin-top: 3rem;
+        width: 7vh;
+        height: 7vh;
+
+    }
+
+    .social-logo {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+@media (min-width: 1025px) and (max-width: 1600px) {
+
+    /* HEADER */
+    .menu{
+        justify-content: space-between;
+    }
+    .menu__lista {
+        font-size: 1.5rem;
+        justify-content:space-evenly;
+        padding: 0;
+        gap: 0rem;
+
+        width: 50vw;
+    }
+    .menu__item{
+        line-height: normal;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        width: 100%;
+        min-height: 7.5vh;
+    }
+    .menu__item a{
+        text-align: center;
+        line-height: 7.5vh;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-header {
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        width: 50%;
+
+        z-index: 50;
+    }
+
+    .logo-header img {
+        transform: scale(0.7);
+        margin-right: 0.8rem;
+    }
+
+    /* MAIN */
+    .section-container>.title {
+        line-height: 0.5rem;
+    }
+    /* PRESENTACION */
+    .pres-container aside {
+        position: absolute;
+    }
+
+    .image-space {
+        top: -10vh;
+        left: -20vw;
+        width: 100%;
+    }
+
+    .presentation {
+        top: 17vh;
+        right: 0;
+        width: 60%;
+    }
+
+    .presentation-pres {
+        padding: 3%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width: 95%;
+    }
+
+    .presentation__description {
+        padding: 0 5% 0 5%;
+    }
+
+    .presentation__description .description-portfolio {
+        font-size: 1.5rem;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .presentation__text {
+        position: relative;
+        top: -1.5rem;
+        text-align: center;
+    }
+
+    .presentation__text h1 {
+        font-size: 3rem;
+    }
+
+    .presentation__text p {
+        text-align: center;
+        font-size: 2.4rem;
+        text-wrap: pretty;
+    }
+
+    /* ABOUT ME */
+    .aboutme-photo,
+    .aboutme-info {
+        padding: 1rem;
+    }
+
+    .aboutme-photo {
+        position: absolute;
+        left: 5vw;
+        top: 9vh;
+
+        width: 40vh;
+        height: 65vh;
+
+        overflow: hidden;
+    }
+
+    .aboutme-photo img {
+        object-fit: cover;
+    }
+
+    .aboutme-info {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 63vw;
+        height: 80vh;
+    }
+
+    .info-presentation {
+        gap: 0.5rem;
+    }
+
+    .info-presentation .info-title {
+        color: var(--color-secundario);
+        font-size: 2rem;
+    }
+
+    .info-presentation .info-description {
+        font-size: 1.1rem;
         line-height: 1.5rem;
         font-weight: 400;
         padding: 0;
@@ -1130,7 +1392,7 @@ i:hover {
     .download-button {
         position: absolute;
         left: calc(100vw/10 - 15%);
-        bottom: 10%;
+        bottom: 5%;
         width: 25vw;
         height: 4rem;
     }
@@ -1160,7 +1422,7 @@ i:hover {
 
     /* Elementos del carrusel */
     .carousel-item>a {
-        width: 60%;
+        width: 85%;
 
     }
 
@@ -1174,14 +1436,14 @@ i:hover {
     /* CONTACTO */
     .contact-form {
         padding: 4%;
-        padding-top: 7%;
+        padding-top: 2%;
 
         width: 75%;
         height: 75vh;
     }
 
     .form-group>textarea {
-        height: 250px;
+        height: 180px;
     }
 
     /* FOOTER */
@@ -1354,7 +1616,7 @@ i:hover {
     }
 
     .presentation__description .description-portfolio {
-        font-size: 2rem;
+        font-size: 1.6rem;
         font-weight: 500;
         text-align: center;
     }
@@ -1363,25 +1625,20 @@ i:hover {
         color: var(--color-secundario);
         text-shadow: var(--color-background) 3px 4px;
         font-weight: 700;
-        font-size: 4.6rem;
+        font-size: 3.6rem;
         align-content: center;
 
         height: 75%;
     }
 
     .presentation__text h1 {
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .presentation__text p {
-        text-align: center;
-        font-size: 2.4rem;
+        /*text-align: center;*/
+        font-size: 2rem;
         text-wrap: pretty;
-    }
-
-    .index-button {
-        position: absolute;
-        top: 80vh;
     }
 
     /* ABOUT ME */
@@ -1393,10 +1650,10 @@ i:hover {
     .aboutme-photo {
         position: absolute;
         left: 2rem;
-        top: 7vh;
+        top: 12vh;
 
-        width: 40vh;
-        height: 65vh;
+        width: 30vh;
+        height: 50vh;
 
         overflow: hidden;
     }
@@ -1482,7 +1739,7 @@ i:hover {
 
     /* Elementos del carrusel */
     .carousel-item>a {
-        width: 93%;
+        width: 87%;
     }
 
     .carousel>p {
